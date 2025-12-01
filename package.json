@@ -1,0 +1,27 @@
+{
+  "name": "heka402",
+  "version": "1.0.0",
+  "description": "Cross-chain Privacy Payments over x402",
+  "private": true,
+  "workspaces": [
+    "sdk",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd sdk && npm install && cd ../frontend && npm install",
+    "build:sdk": "cd sdk && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "dev:frontend": "cd frontend && npm run dev",
+    "compile:circuits": "cd circuits && npm run compile",
+    "setup:circuits": "cd circuits && npm run setup"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.22",
+    "pino-pretty": "^13.1.2",
+    "snarkjs": "^0.7.5",
+    "tailwindcss": "^4.1.17"
+  }
+}
